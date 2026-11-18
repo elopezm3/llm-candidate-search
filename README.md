@@ -2,7 +2,7 @@
 
 An end-to-end AI system that extracts structured data from CVs and job postings and finds the best candidates for a role. It was built step by step, and every step was measured against a hand-reviewed golden dataset: extraction → semantic and hybrid search → RAG → workflow vs agent (LangGraph) → observability (Langfuse) → guardrails and memory.
 
-Built as the course project of *AI Engineering: Fundamentos de Construcción de Aplicaciones de IA* (Majup Learn). The course provided the dataset: 97 anonymised CVs in Spanish/English and 28 job postings from Colombia. Every decision, number and dead end is logged in [`DECISIONS.md`](DECISIONS.md), and every API call's cost in [`COSTOS.md`](COSTOS.md). **Total API spend for the whole project: USD 3.29.**
+Built as the course project of *AI Engineering: Fundamentos de Construcción de Aplicaciones de IA* (Majup Learn). The course provided the dataset: 97 anonymised CVs in Spanish/English and 30 job postings from Colombia (28 of them form the golden evaluation set). Every decision, number and dead end is logged in [`DECISIONS.md`](DECISIONS.md), and every API call's cost in [`COSTOS.md`](COSTOS.md). **Total API spend for the whole project: USD 3.29.**
 
 ## Results
 
