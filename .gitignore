@@ -1,0 +1,8 @@
+data/
+.env
+*.env
+__pycache__/
+*.pyc
+.pytest_cache/
+*.sqlite
+.DS_Store
