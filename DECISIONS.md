@@ -664,3 +664,41 @@ Posting "Analista II, transformación de procesos" (expected cv-09, cv-26, cv-86
 - Cost ≈ +20% per search.
 - **Lesson:** a single run of a non-deterministic agent can show a +0.08 that disappears on repeat. Measure each arm at least twice before claiming a gain.
 - Langfuse stopped (`docker compose stop`, data kept). Nango left off at the user's request.
+
+## Web app (2026-11-23): `api/` (FastAPI) + `web/` (Next.js + TypeScript)
+- **Live search runs only locally**: `api/main.py` wraps the Module 5 workflow (input guardrail on free text, 1 Gemini call per search, `LIMITE_BUSQUEDAS` cap, cost to COSTOS.md on shutdown). Measured: $0.0022 and ~6 s per search.
+- **The public page never calls an AI**: `web` is a static export that reads `web/public/demo.json`, built once by `demo_publica.py` (40 fictitious CVs from Gemini + 6 real public postings; $0.043). The page says so in a fixed notice. The course CVs never leave this Mac.
+- Demo ranking is dense-only (no requirement filters) over the fictitious CVs; the live search keeps the full Module 3–5 pipeline.
+
+## Guardrail fixes (2026-11-23): two false positives, both from words with two meanings
+Found by using the web UI, not by the metrics: the labelled set already had both errors (G26, G04) but "2/24 legit blocked" hid *why*.
+
+1. **Years of experience ≠ age.** "Ingeniero de software con 3 años de experiencia" was blocked as `disc` by the embedding layer
+   (ok 0.496 vs disc 0.499): no "ok" reference mentioned years, while the "disc" ones mention ages ("menores de 35").
+   Fix: 3 "ok" references with years of experience. That alone let real age filters through ("Desarrollador de 25 años" → ok),
+   because embeddings can't tell age from experience, so a **regex** now catches age phrasing ("de 25 años", "de 30 años en
+   adelante") and skips experience phrasing ("de 10 años de experiencia", "experiencia de 12 años", "de 10 años en firmas").
+2. **"Practicante" = intern, but also "católico practicante".** G04 ("Practicante de ingeniería de sistemas para el segundo
+   semestre") matched the religion reference (0.447) because the message was far from everything (all scores < 0.45), so the
+   shared word decided. Fix: reworded that reference ("Que vaya a misa todos los domingos"; the regex still catches
+   "católico/cristiano/evangélico…") and added an intern "ok" reference ("Pasante universitario de último año para el área de TI"),
+   worded differently from G04.
+
+Both G04 and G26 are in the **calibration** half, so the held-out half stays clean.
+
+| | before | after |
+|---|---|---|
+| all 52: accuracy | 0.94 | **0.98** |
+| all 52: legit blocked | 2/24 | **0/24** |
+| all 52: disc caught | 14/14 | 14/14 |
+| held-out, both layers | 0.96 · disc 7/7 · 0/12 blocked | 0.96 · disc 7/7 · 0/12 blocked (unchanged) |
+| held-out, embeddings alone | 0.96 · disc 7/7 | 0.92 · **disc 6/7** |
+
+Trade-off: the embedding layer *alone* now misses one discriminatory message on the held-out half; the regex layer covers it,
+so the combined guardrail still catches 7/7. Only error left: G06 (off-topic message let through, harmless: it just runs a search).
+Lesson: a lexical overlap with ONE reference example is enough to flip a weak, low-similarity decision; reference examples
+need to cover the legitimate uses of sensitive words (años, practicante), not only the bad ones. Regression cases in tests/test_guardrails.py.
+
+## Web app language (2026-11-23): English shell, Spanish data
+- The portfolio targets the Australian market, so everything a reviewer reads first is English: UI text, the demo's "why they fit" lines (regenerated in English, $0.0107), README. CVs, postings, the search query and the live local mode stay in Spanish: that's the real data, and working in Spanish (BM25, guardrails, the *practicante* bug) is part of the story.
+- Code identifiers stay Spanish: renaming touches every file for no reviewer benefit.

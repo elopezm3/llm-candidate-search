@@ -1,0 +1,933 @@
+{
+ "generado": "2026-11-23",
+ "total_cvs": 40,
+ "busquedas": [
+  {
+   "cargo": "AI Engineer (LLMs & Generative AI)",
+   "consulta": "AI Engineer (LLMs & Generative AI). Mínimo 4 años de experiencia. Formación: pregrado en Computer Science, Engineering. Tecnologías: Python, SQL, PostgreSQL, GPT-4, Claude, Gemini, LLaMA, AWS, GCP, Azure. Idiomas: Inglés B2.",
+   "candidatos": [
+    {
+     "id": "demo-14",
+     "nombre": "Daniela Sofía Herrera Castro",
+     "ciudad": "Barranquilla",
+     "anos_experiencia": 3,
+     "experiencia": [
+      "Junior Data Engineer @ Caribe Tech Services (2022-04–hoy)",
+      "Auxiliar de Datos @ Supermercados La Perla (2021-03–2022-03)"
+     ],
+     "educacion": [
+      "Ingeniería de Sistemas (pregrado) - Universidad del Norte"
+     ],
+     "tecnologias": [
+      "Python",
+      "SQL",
+      "PostgreSQL",
+      "Google BigQuery",
+      "GCP",
+      "Airflow",
+      "Bash",
+      "Git"
+     ],
+     "idiomas": [
+      "Español nativo",
+      "Inglés B1"
+     ],
+     "motivo": "Fits the engineering background and has Python, SQL, PostgreSQL, and GCP, but lacks the minimum 4 years of experience (has 3), requires B2 English (has B1), and has no listed LLM/GenAI technologies."
+    },
+    {
+     "id": "demo-02",
+     "nombre": "Valentina Gómez Henao",
+     "ciudad": "Medellín",
+     "anos_experiencia": 4,
+     "experiencia": [
+      "Machine Learning Engineer @ PaisaData Labs (2022-04–hoy)",
+      "Junior Data Scientist @ InnovaValle Tech (2020-01–2022-03)"
+     ],
+     "educacion": [
+      "Pregrado en Ingeniería Matemática - Universidad EAFIT",
+      "Especialización en Analítica de Datos - Universidad de Antioquia"
+     ],
+     "tecnologias": [
+      "Python",
+      "Scikit-Learn",
+      "XGBoost",
+      "Pandas",
+      "SQL",
+      "Airflow",
+      "GCP",
+      "Git",
+      "Flask"
+     ],
+     "idiomas": [
+      "Español nativo",
+      "Inglés B2"
+     ],
+     "motivo": "Meets the 4-year experience requirement, has an engineering degree, and reaches English B2 with Python, SQL, and GCP; however, lacks LLM/GenAI tools (GPT-4, Claude, Gemini, LLaMA) and PostgreSQL."
+    },
+    {
+     "id": "demo-01",
+     "nombre": "Carlos Andrés Mendoza Ríos",
+     "ciudad": "Bogotá",
+     "anos_experiencia": 12,
+     "experiencia": [
+      "Principal AI Architect @ NeuraLatam Solutions (2021-03–hoy)",
+      "Lead MLOps Engineer @ Andes Cloud Dynamics (2018-01–2021-02)",
+      "Senior Software Engineer @ Altiplano Tech (2015-06–2017-12)",
+      "Data Engineer @ Sistecol Consultores (2012-02–2015-05)"
+     ],
+     "educacion": [
+      "Pregrado en Ingeniería de Sistemas - Universidad Nacional de Colombia",
+      "Maestría en Ciencias de la Computación - Universidad de los Andes"
+     ],
+     "tecnologias": [
+      "Python",
+      "TensorFlow",
+      "PyTorch",
+      "Kubernetes",
+      "Docker",
+      "MLflow",
+      "AWS",
+      "Kafka",
+      "FastAPI",
+      "Terraform",
+      "Spark"
+     ],
+     "idiomas": [
+      "Español nativo",
+      "Inglés C1"
+     ],
+     "motivo": "Exceeds the required 4 years of experience (12 years), holds Computer Science and Engineering degrees, meets English proficiency (C1), and has Python and AWS; lacks SQL, PostgreSQL, and specific LLMs (GPT-4, Claude, Gemini, LLaMA)."
+    },
+    {
+     "id": "demo-06",
+     "nombre": "Laura Marcela Quintero Rojas",
+     "ciudad": "Bucaramanga",
+     "anos_experiencia": 5,
+     "experiencia": [
+      "NLP Research Engineer @ Santander Deep Labs (2021-11–hoy)",
+      "Data Scientist @ Cañón Digital (2019-02–2021-10)"
+     ],
+     "educacion": [
+      "Pregrado en Ingeniería Electrónica - Universidad Industrial de Santander",
+      "Maestría en Computación Científica - Universidad Industrial de Santander"
+     ],
+     "tecnologias": [
+      "Python",
+      "Hugging Face",
+      "PyTorch",
+      "SpaCy",
+      "BERT",
+      "OpenCV",
+      "FastAPI",
+      "Docker",
+      "W&B"
+     ],
+     "idiomas": [
+      "Español nativo",
+      "Inglés C1",
+      "Francés A2"
+     ],
+     "motivo": "Meets the 4-year experience threshold (5 years), holds an engineering degree, and exceeds English requirements (C1) with Python skills, but lacks SQL, PostgreSQL, cloud platforms (AWS, GCP, Azure), and the required LLMs (GPT-4, Claude, Gemini, LLaMA)."
+    },
+    {
+     "id": "demo-10",
+     "nombre": "Claudia Helena Restrepo Ortiz",
+     "ciudad": "Cartagena",
+     "anos_experiencia": 9,
+     "experiencia": [
+      "Lead MLOps Architect @ Bahía IA Technologies (2022-01–hoy)",
+      "Senior DevOps & Cloud Engineer @ Heroica Code (2018-06–2021-12)",
+      "Software Infrastructure Engineer @ Muralla Digital (2015-01–2018-05)"
+     ],
+     "educacion": [
+      "Pregrado en Ingeniería de Sistemas - Universidad de Cartagena",
+      "Maestría en Ingeniería con Énfasis en Telecomunicaciones - Universidad Tecnológica de Bolívar"
+     ],
+     "tecnologias": [
+      "Kubernetes",
+      "Docker",
+      "Terraform",
+      "AWS",
+      "Azure",
+      "Python",
+      "MLflow",
+      "KubeFlow",
+      "CI/CD",
+      "Bash",
+      "Prometheus"
+     ],
+     "idiomas": [
+      "Español nativo",
+      "Inglés C1"
+     ],
+     "motivo": "Exceeds experience requirements (9 years), has an engineering degree, exceeds English B2 (C1), and covers Python, AWS, and Azure; lacks SQL, PostgreSQL, GCP, and the specified LLM models (GPT-4, Claude, Gemini, LLaMA)."
+    }
+   ]
+  },
+  {
+   "cargo": "Senior data engineer",
+   "consulta": "Senior data engineer. Mínimo 4 años de experiencia. Formación: pregrado en ingeniería de sistemas, software, telecomunicaciones. Tecnologías: Apache Spark, AWS, Amazon S3, Apache Airflow, Python, GCP, Azure.",
+   "candidatos": [
+    {
+     "id": "demo-11",
+     "nombre": "Ricardo Alonso Peñaranda Gil",
+     "ciudad": "Bogotá",
+     "anos_experiencia": 14,
+     "experiencia": [
+      "Principal Data Architect @ Soluciones Cloud Andina (2021-03–hoy)",
+      "Lead Data Engineer @ Logística Global del Valle (2017-06–2021-02)",
+      "Senior BI Developer @ Banco Cafetero Virtual (2013-01–2017-05)",
+      "Desarrollador SQL @ Redes & Servicios del Norte (2010-02–2012-12)"
+     ],
+     "educacion": [
+      "Ingeniería de Sistemas (pregrado) - Universidad Nacional de Colombia",
+      "Maestría en Arquitectura de Tecnologías de Información (maestría) - Universidad de los Andes"
+     ],
+     "tecnologias": [
+      "Apache Spark",
+      "Databricks",
+      "AWS",
+      "Python",
+      "SQL",
+      "Terraform",
+      "Snowflake",
+      "dbt",
+      "Airflow",
+      "Kafka",
+      "Docker"
+     ],
+     "idiomas": [
+      "Español nativo",
+      "Inglés C1"
+     ],
+     "motivo": "Fits well with 14 years of experience, a degree in Ingeniería de Sistemas, and experience as Lead Data Engineer; lists Apache Spark, AWS, Python, and Airflow, but does not explicitly mention Amazon S3, GCP, or Azure."
+    },
+    {
+     "id": "demo-20",
+     "nombre": "Paola Andrea Bermúdez Londoño",
+     "ciudad": "Cartagena",
+     "anos_experiencia": 7,
+     "experiencia": [
+      "Ingeniera de Datos @ Petroquímica y Derivados del Mar (2020-11–hoy)",
+      "Desarrolladora ETL @ Logística Portuaria del Caribe (2017-04–2020-10)"
+     ],
+     "educacion": [
+      "Ingeniería de Sistemas (pregrado) - Universidad de Cartagena",
+      "Especialización en Big Data y Analítica (especialización) - Universidad Externado de Colombia"
+     ],
+     "tecnologias": [
+      "Azure Data Factory",
+      "Synapse",
+      "Python",
+      "SQL",
+      "Databricks",
+      "Power BI",
+      "Snowflake",
+      "Git",
+      "Talend"
+     ],
+     "idiomas": [
+      "Español nativo",
+      "Inglés B2"
+     ],
+     "motivo": "Fits the 4-year requirement with 7 years of experience and a degree in Ingeniería de Sistemas, but works mainly with Azure Data Factory/Synapse and lacks Apache Spark, AWS, Amazon S3, Apache Airflow, and GCP."
+    },
+    {
+     "id": "demo-14",
+     "nombre": "Daniela Sofía Herrera Castro",
+     "ciudad": "Barranquilla",
+     "anos_experiencia": 3,
+     "experiencia": [
+      "Junior Data Engineer @ Caribe Tech Services (2022-04–hoy)",
+      "Auxiliar de Datos @ Supermercados La Perla (2021-03–2022-03)"
+     ],
+     "educacion": [
+      "Ingeniería de Sistemas (pregrado) - Universidad del Norte"
+     ],
+     "tecnologias": [
+      "Python",
+      "SQL",
+      "PostgreSQL",
+      "Google BigQuery",
+      "GCP",
+      "Airflow",
+      "Bash",
+      "Git"
+     ],
+     "idiomas": [
+      "Español nativo",
+      "Inglés B1"
+     ],
+     "motivo": "Has a degree in Ingeniería de Sistemas and experience with GCP, Airflow, and Python, but falls short with only 3 years of experience and lacks Apache Spark, AWS, Amazon S3, and Azure."
+    },
+    {
+     "id": "demo-01",
+     "nombre": "Carlos Andrés Mendoza Ríos",
+     "ciudad": "Bogotá",
+     "anos_experiencia": 12,
+     "experiencia": [
+      "Principal AI Architect @ NeuraLatam Solutions (2021-03–hoy)",
+      "Lead MLOps Engineer @ Andes Cloud Dynamics (2018-01–2021-02)",
+      "Senior Software Engineer @ Altiplano Tech (2015-06–2017-12)",
+      "Data Engineer @ Sistecol Consultores (2012-02–2015-05)"
+     ],
+     "educacion": [
+      "Pregrado en Ingeniería de Sistemas - Universidad Nacional de Colombia",
+      "Maestría en Ciencias de la Computación - Universidad de los Andes"
+     ],
+     "tecnologias": [
+      "Python",
+      "TensorFlow",
+      "PyTorch",
+      "Kubernetes",
+      "Docker",
+      "MLflow",
+      "AWS",
+      "Kafka",
+      "FastAPI",
+      "Terraform",
+      "Spark"
+     ],
+     "idiomas": [
+      "Español nativo",
+      "Inglés C1"
+     ],
+     "motivo": "Fits with 12 years of experience (including past Data Engineer experience), a degree in Ingeniería de Sistemas, and skills in Python, AWS, and Spark, but lacks listed experience in Amazon S3, Apache Airflow, GCP, and Azure."
+    },
+    {
+     "id": "demo-02",
+     "nombre": "Valentina Gómez Henao",
+     "ciudad": "Medellín",
+     "anos_experiencia": 4,
+     "experiencia": [
+      "Machine Learning Engineer @ PaisaData Labs (2022-04–hoy)",
+      "Junior Data Scientist @ InnovaValle Tech (2020-01–2022-03)"
+     ],
+     "educacion": [
+      "Pregrado en Ingeniería Matemática - Universidad EAFIT",
+      "Especialización en Analítica de Datos - Universidad de Antioquia"
+     ],
+     "tecnologias": [
+      "Python",
+      "Scikit-Learn",
+      "XGBoost",
+      "Pandas",
+      "SQL",
+      "Airflow",
+      "GCP",
+      "Git",
+      "Flask"
+     ],
+     "idiomas": [
+      "Español nativo",
+      "Inglés B2"
+     ],
+     "motivo": "Meets the 4 years of experience and lists Airflow, GCP, and Python, but has a degree in Pregrado en Ingeniería Matemática instead of systems/software/telecom, and lacks Apache Spark, AWS, Amazon S3, and Azure."
+    }
+   ]
+  },
+  {
+   "cargo": "Ingeniero/a de Software - Semillero Talento Diverso",
+   "consulta": "Ingeniero/a de Software - Semillero Talento Diverso. Formación: pregrado en Ingeniera de sistemas.",
+   "candidatos": [
+    {
+     "id": "demo-03",
+     "nombre": "Mateo David Silva Ospina",
+     "ciudad": "Cali",
+     "anos_experiencia": 0,
+     "experiencia": [
+      "Practicante de Desarrollo @ Ingenio Digital del Valle (2023-07–2024-01)"
+     ],
+     "educacion": [
+      "Pregrado en Ingeniería de Sistemas y Computación - Universidad del Valle"
+     ],
+     "tecnologias": [
+      "Python",
+      "JavaScript",
+      "React",
+      "PostgreSQL",
+      "Git",
+      "Scikit-Learn",
+      "Django"
+     ],
+     "idiomas": [
+      "Español nativo",
+      "Inglés B1"
+     ],
+     "motivo": "Fits well with a \"Pregrado en Ingeniería de Sistemas y Computación\" and an entry-level profile (0 years of experience, previously \"Practicante de Desarrollo\") ideal for a semillero talent program."
+    },
+    {
+     "id": "demo-04",
+     "nombre": "Diana Patricia Marín Vélez",
+     "ciudad": "Pereira",
+     "anos_experiencia": 7,
+     "experiencia": [
+      "Senior Backend Engineer @ Cafetero Soft (2021-09–hoy)",
+      "Desarrolladora Web Fullstack @ Otún Redes (2018-05–2021-08)",
+      "Ingeniera de Software Junior @ RisaraldaTI (2017-02–2018-04)"
+     ],
+     "educacion": [
+      "Pregrado en Ingeniería de Sistemas y Computación - Universidad Tecnológica de Pereira"
+     ],
+     "tecnologias": [
+      "Java",
+      "Spring Boot",
+      "TypeScript",
+      "Node.js",
+      "Docker",
+      "MongoDB",
+      "PostgreSQL",
+      "RabbitMQ",
+      "AWS",
+      "JUnit"
+     ],
+     "idiomas": [
+      "Español nativo",
+      "Inglés B2"
+     ],
+     "motivo": "Has the required \"Pregrado en Ingeniería de Sistemas y Computación\", but with 7 years of experience as \"Senior Backend Engineer\", she is overly experienced for a semillero role."
+    },
+    {
+     "id": "demo-37",
+     "nombre": "Sebastián Camilo Pinzón Rueda",
+     "ciudad": "Bogotá",
+     "anos_experiencia": 4,
+     "experiencia": [
+      "Consultor de Negocio Junior @ Consultora Soluciones Andinas (2022-01–hoy)",
+      "Analista de Requerimientos @ Software y Banca Tecnológica (2020-02–2021-12)"
+     ],
+     "educacion": [
+      "Ingeniería de Sistemas (pregrado) - Escuela Colombiana de Ingeniería Julio Garavito"
+     ],
+     "tecnologias": [
+      "SQL",
+      "Python",
+      "BPMN",
+      "Enterprise Architect",
+      "Jira",
+      "Postman",
+      "Git",
+      "Scrum"
+     ],
+     "idiomas": [
+      "Español nativo",
+      "Inglés C1",
+      "Francés A1"
+     ],
+     "motivo": "Meets the \"Ingeniería de Sistemas (pregrado)\" requirement, but has 4 years of experience as \"Consultor de Negocio Junior\" and \"Analista de Requerimientos\" rather than a foundational semillero software developer profile."
+    },
+    {
+     "id": "demo-05",
+     "nombre": "Javier Enrique Paternina Buelvas",
+     "ciudad": "Barranquilla",
+     "anos_experiencia": 20,
+     "experiencia": [
+      "Director de Tecnología @ Caribe Informática Integral (2016-01–hoy)",
+      "Líder de Arquitectura @ Servicómputo Costeño (2010-04–2015-12)",
+      "Ingeniero de Software Senior @ Sistemas del Litoral (2006-08–2010-03)",
+      "Analista Programador @ Puerta de Oro Software (2004-02–2006-07)"
+     ],
+     "educacion": [
+      "Pregrado en Ingeniería de Sistemas - Universidad del Norte",
+      "Especialización en Gestión de Proyectos de Software - Universidad del Norte"
+     ],
+     "tecnologias": [
+      "C#",
+      ".NET Core",
+      "SQL Server",
+      "Oracle",
+      "Azure",
+      "Microservicios",
+      "Angular",
+      "Scrum",
+      "Enterprise Architect",
+      "REST API"
+     ],
+     "idiomas": [
+      "Español nativo",
+      "Inglés B1"
+     ],
+     "motivo": "Holds a \"Pregrado en Ingeniería de Sistemas\", but his 20 years of experience and executive background as \"Director de Tecnología\" far exceed the entry-level scope of a semillero."
+    },
+    {
+     "id": "demo-10",
+     "nombre": "Claudia Helena Restrepo Ortiz",
+     "ciudad": "Cartagena",
+     "anos_experiencia": 9,
+     "experiencia": [
+      "Lead MLOps Architect @ Bahía IA Technologies (2022-01–hoy)",
+      "Senior DevOps & Cloud Engineer @ Heroica Code (2018-06–2021-12)",
+      "Software Infrastructure Engineer @ Muralla Digital (2015-01–2018-05)"
+     ],
+     "educacion": [
+      "Pregrado en Ingeniería de Sistemas - Universidad de Cartagena",
+      "Maestría en Ingeniería con Énfasis en Telecomunicaciones - Universidad Tecnológica de Bolívar"
+     ],
+     "tecnologias": [
+      "Kubernetes",
+      "Docker",
+      "Terraform",
+      "AWS",
+      "Azure",
+      "Python",
+      "MLflow",
+      "KubeFlow",
+      "CI/CD",
+      "Bash",
+      "Prometheus"
+     ],
+     "idiomas": [
+      "Español nativo",
+      "Inglés C1"
+     ],
+     "motivo": "Possesses a \"Pregrado en Ingeniería de Sistemas\", but with 9 years of advanced experience culminating as \"Lead MLOps Architect\", she is overqualified for a semillero vacancy."
+    }
+   ]
+  },
+  {
+   "cargo": "Analista de Seguros",
+   "consulta": "Analista de Seguros. Mínimo 2 años de experiencia. Formación: pregrado en áreas administrativas, financieras, afines. Tecnologías: Power BI, Tableau, Looker Studio, Power Automate. Idiomas: Inglés B2.",
+   "candidatos": [
+    {
+     "id": "demo-13",
+     "nombre": "Jorge Eliécer Quintero Morales",
+     "ciudad": "Cali",
+     "anos_experiencia": 6,
+     "experiencia": [
+      "Especialista BI @ Agroservicios del Cauca (2021-08–hoy)",
+      "Analista de BI @ Rápido Express Valle (2019-02–2021-07)",
+      "Analista de Reportes @ Confecciones Industriales del Sur (2018-03–2019-01)"
+     ],
+     "educacion": [
+      "Ingeniería Industrial (pregrado) - Universidad del Valle",
+      "Especialización en Inteligencia de Negocios (especialización) - Universidad Icesi"
+     ],
+     "tecnologias": [
+      "Power BI",
+      "DAX",
+      "SQL Server",
+      "SSIS",
+      "Tableau",
+      "Excel Avanzado",
+      "Azure SQL",
+      "ETL"
+     ],
+     "idiomas": [
+      "Español nativo",
+      "Inglés A2"
+     ],
+     "motivo": "Meets the experience requirement (6 years), has a degree in Ingeniería Industrial, and knows Power BI and Tableau, but lacks insurance sector experience and has only Inglés A2 instead of B2."
+    },
+    {
+     "id": "demo-32",
+     "nombre": "Daniela Sofía Morales Vargas",
+     "ciudad": "Bogotá",
+     "anos_experiencia": 5,
+     "experiencia": [
+      "Analista de Negocio Senior @ Seguros Bolívaria (2021-06–hoy)",
+      "Analista de Procesos @ Banco Metropolitano Central (2019-01–2021-05)",
+      "Practicante de Operaciones @ Finanzas Nueva Granada (2018-06–2018-12)"
+     ],
+     "educacion": [
+      "Ingeniería Industrial (pregrado) - Pontificia Universidad Javeriana",
+      "Especialización en Gestión de Proyectos - Universidad del Rosario"
+     ],
+     "tecnologias": [
+      "Jira",
+      "Confluence",
+      "Bizagi",
+      "Power BI",
+      "SQL",
+      "Tableau",
+      "Trello",
+      "Miro",
+      "Visio"
+     ],
+     "idiomas": [
+      "Español nativo",
+      "Inglés B2"
+     ],
+     "motivo": "Fits well with 5 years of experience, relevant background as Analista de Negocio Senior at Seguros Bolívaria, an Ingeniería Industrial degree, Inglés B2, and skills in Power BI and Tableau."
+    },
+    {
+     "id": "demo-35",
+     "nombre": "Jorge Enrique Zambrano Roa",
+     "ciudad": "Barranquilla",
+     "anos_experiencia": 12,
+     "experiencia": [
+      "Director de Pólizas Colectivas @ Reaseguradora Costeña (2017-09–hoy)",
+      "Líder de Suscripción de Seguros de Vida @ Caribe Aseguradora (2014-04–2017-08)",
+      "Ejecutivo de Cuentas Corporativas @ Banco del Litoral (2012-01–2014-03)"
+     ],
+     "educacion": [
+      "Contaduría Pública (pregrado) - Universidad del Norte",
+      "Especialización en Seguros y Seguridad Social - Universidad Externado de Colombia"
+     ],
+     "tecnologias": [
+      "Excel Avanzado",
+      "AS400",
+      "SAP Business One",
+      "Power BI",
+      "CRM HubSpot"
+     ],
+     "idiomas": [
+      "Español nativo",
+      "Inglés B2"
+     ],
+     "motivo": "Brings 12 years of experience in the insurance sector and an eligible degree in Contaduría Pública with Inglés B2, but only handles Power BI among the required BI/automation technologies."
+    },
+    {
+     "id": "demo-39",
+     "nombre": "Andrés Felipe Mendoza Torres",
+     "ciudad": "Bogotá",
+     "anos_experiencia": 9,
+     "experiencia": [
+      "Product Owner - Crédito Digital @ Neobanco Andino (2021-08–hoy)",
+      "Business Analyst Senior @ Seguros Futura Colombia (2018-05–2021-07)",
+      "Analista de Inteligencia de Mercados @ Compañía de Crédito Capital (2015-03–2018-04)"
+     ],
+     "educacion": [
+      "Ingeniería Industrial (pregrado) - Universidad de los Andes",
+      "Maestría en Analítica de Datos (maestría) - Universidad de los Andes"
+     ],
+     "tecnologias": [
+      "SQL",
+      "Tableau",
+      "Mixpanel",
+      "Jira",
+      "Figma",
+      "Python",
+      "Google Analytics",
+      "Confluence",
+      "RStudio"
+     ],
+     "idiomas": [
+      "Español nativo",
+      "Inglés C2",
+      "Portugués B1"
+     ],
+     "motivo": "Meets the degree requirement in Ingeniería Industrial, has strong English (C2), and previous experience as Business Analyst Senior at Seguros Futura Colombia with Tableau, but lacks Power BI and Power Automate."
+    },
+    {
+     "id": "demo-16",
+     "nombre": "María Camila Vargas Salazar",
+     "ciudad": "Bucaramanga",
+     "anos_experiencia": 4,
+     "experiencia": [
+      "Analista de Operaciones y Procesos @ Servientregas del Oriente (2022-01–hoy)",
+      "Coordinadora de Calidad y Datos @ Alimentos Santandereanos (2020-03–2021-12)"
+     ],
+     "educacion": [
+      "Ingeniería Industrial (pregrado) - Universidad Industrial de Santander"
+     ],
+     "tecnologias": [
+      "Excel Avanzado",
+      "VBA",
+      "Power BI",
+      "SQL Básico",
+      "Minitab",
+      "Bizagi"
+     ],
+     "idiomas": [
+      "Español nativo",
+      "Inglés B1"
+     ],
+     "motivo": "Has 4 years of experience, an Ingeniería Industrial degree, and Power BI skills, but lacks insurance sector experience, other required tools, and has only Inglés B1 instead of B2."
+    }
+   ]
+  },
+  {
+   "cargo": "Coordinador/a de mercadeo BTL",
+   "consulta": "Coordinador/a de mercadeo BTL. Mínimo 3 años de experiencia. Formación: pregrado en administración de empresas, mercadeo.",
+   "candidatos": [
+    {
+     "id": "demo-22",
+     "nombre": "Valentina Gómez Morales",
+     "ciudad": "Bogotá",
+     "anos_experiencia": 0,
+     "experiencia": [
+      "Practicante de Trade Marketing @ Textilera San Jerónimo (2023-07–2024-01)"
+     ],
+     "educacion": [
+      "Pregrado en Mercadeo y Publicidad"
+     ],
+     "tecnologias": [
+      "Meta Business Suite",
+      "Google Analytics",
+      "Canva",
+      "Excel Intermedio",
+      "Mailchimp",
+      "Trello"
+     ],
+     "idiomas": [
+      "Español nativo",
+      "Inglés C1"
+     ],
+     "motivo": "Meets the degree requirement with a Pregrado en Mercadeo y Publicidad, but only has 0 years of experience as Practicante de Trade Marketing, falling short of the required 3 years and BTL focus."
+    },
+    {
+     "id": "demo-28",
+     "nombre": "Gloria Estela Rincón Lozano",
+     "ciudad": "Ibagué",
+     "anos_experiencia": 15,
+     "experiencia": [
+      "Coordinadora de Ventas Regional @ Harinera del Tolima Grande (2016-09–hoy)",
+      "Supervisora de Canal Tradicional @ Lácteos La Pradera Central (2011-06–2016-08)",
+      "Preventista TAT @ Distribuidora Combeima (2009-01–2011-05)"
+     ],
+     "educacion": [
+      "Técnico Profesional en Operaciones Comerciales",
+      "Pregrado en Mercadeo"
+     ],
+     "tecnologias": [
+      "Excel Intermedio",
+      "Handheld POS Apps",
+      "SAP Business One",
+      "Outlook"
+     ],
+     "idiomas": [
+      "Español nativo"
+     ],
+     "motivo": "Holds a Pregrado en Mercadeo and over 15 years of experience, but her roles (Coordinadora de Ventas Regional, Supervisora de Canal Tradicional, Preventista TAT) focus on sales/commercial channels rather than BTL marketing."
+    },
+    {
+     "id": "demo-24",
+     "nombre": "Luz Marina Henao Zuluaga",
+     "ciudad": "Pereira",
+     "anos_experiencia": 12,
+     "experiencia": [
+      "Directora de Mercadeo y Comunicaciones @ Hoteles del Eje Cafetero (2019-01–hoy)",
+      "Gerente de Marca @ Torrefactora Cordillera Real (2015-05–2018-12)",
+      "Especialista de Trade Marketing @ Comercializadora Risaralda (2012-02–2015-04)"
+     ],
+     "educacion": [
+      "Pregrado in Comunicación Social",
+      "Especialización en Mercadeo Estratégico"
+     ],
+     "tecnologias": [
+      "HubSpot",
+      "Google Ads",
+      "Hootsuite",
+      "WordPress",
+      "SEMrush",
+      "Google Analytics",
+      "Klaviyo"
+     ],
+     "idiomas": [
+      "Español nativo",
+      "Inglés B2",
+      "Francés A2"
+     ],
+     "motivo": "Has 12 years of extensive marketing experience (Directora de Mercadeo y Comunicaciones, Gerente de Marca, Especialista de Trade Marketing), but holds a Pregrado in Comunicación Social rather than the requested pregrado en administración de empresas or mercadeo."
+    },
+    {
+     "id": "demo-30",
+     "nombre": "Paola Andrea Moncada Duarte",
+     "ciudad": "Villavicencio",
+     "anos_experiencia": 2,
+     "experiencia": [
+      "Asistente de Marketing y Eventos @ Ganadería y Genética del Llano (2022-06–hoy)"
+     ],
+     "educacion": [
+      "Pregrado en Comunicación Social y Periodismo"
+     ],
+     "tecnologias": [
+      "Canva",
+      "CapCut",
+      "Meta Suite",
+      "WordPress",
+      "Excel Básico",
+      "Mailchimp"
+     ],
+     "idiomas": [
+      "Español nativo"
+     ],
+     "motivo": "Has relevant event and marketing experience as Asistente de Marketing y Eventos, but has only 2 years of experience (below the 3-year minimum) and holds a Pregrado en Comunicación Social y Periodismo."
+    },
+    {
+     "id": "demo-34",
+     "nombre": "María Paula Benavides Castro",
+     "ciudad": "Bucaramanga",
+     "anos_experiencia": 0,
+     "experiencia": [
+      "Monitina Académica de Mercadeo @ Universidad Industrial de Santander (2023-02–2023-11)"
+     ],
+     "educacion": [
+      "Administración Financiera (pregrado) - Universidad Industrial de Santander"
+     ],
+     "tecnologias": [
+      "Excel",
+      "PowerPoint",
+      "R Básico",
+      "SPSS",
+      "Google Analytics"
+     ],
+     "idiomas": [
+      "Español nativo",
+      "Inglés B1"
+     ],
+     "motivo": "Does not meet the 3-year experience requirement (0 years of experience, only Monitina Académica de Mercadeo) and holds a degree in Administración Financiera (pregrado) instead of administración de empresas or mercadeo."
+    }
+   ]
+  },
+  {
+   "cargo": "Director/a de proyectos",
+   "consulta": "Director/a de proyectos. Mínimo 6 años de experiencia. Formación: especializacion en Ingeniería Eléctrica, Ingeniería Mecánica, Gerencia de Proyectos. Tecnologías: Microsoft Project.",
+   "candidatos": [
+    {
+     "id": "demo-29",
+     "nombre": "Sebastián Beltrán Castaño",
+     "ciudad": "Manizales",
+     "anos_experiencia": 6,
+     "experiencia": [
+      "Scrum Master y Gestor de Proyectos @ Soluciones Digitales Caldas (2021-11–hoy)",
+      "Coordinador de Proyectos TI @ Redes e Integraciones Ruiz (2018-03–2021-10)"
+     ],
+     "educacion": [
+      "Pregrado en Ingeniería de Sistemas",
+      "Especialización en Gerencia de Proyectos"
+     ],
+     "tecnologias": [
+      "Jira Software",
+      "Confluence",
+      "Notion",
+      "Mural",
+      "GitHub Projects",
+      "Power BI",
+      "DevOps Azure"
+     ],
+     "idiomas": [
+      "Español nativo",
+      "Inglés B2"
+     ],
+     "motivo": "Meets the 6 years of experience requirement and holds an Especialización en Gerencia de Proyectos, but does not list Microsoft Project in his technologies."
+    },
+    {
+     "id": "demo-23",
+     "nombre": "Juan Camilo Caicedo Parra",
+     "ciudad": "Cali",
+     "anos_experiencia": 7,
+     "experiencia": [
+      "Líder de Proyectos Comerciales @ Servicios Logísticos Farallones (2021-04–hoy)",
+      "Analista Senior de PMO @ Soluciones Agroindustriales del Cauca (2018-08–2021-03)",
+      "Coordinador de Proyectos Junior @ Empaques Río Claro (2017-02–2018-07)"
+     ],
+     "educacion": [
+      "Pregrado en Ingeniería Industrial",
+      "Especialización en Gestión de Proyectos"
+     ],
+     "tecnologias": [
+      "Jira",
+      "Asana",
+      "MS Project",
+      "Trello",
+      "Smartsheet",
+      "Power BI",
+      "Miro",
+      "Confluence"
+     ],
+     "idiomas": [
+      "Español nativo",
+      "Inglés B1"
+     ],
+     "motivo": "Fully matches all criteria with 7 years of experience, an Especialización en Gestión de Proyectos, and proficiency in MS Project."
+    },
+    {
+     "id": "demo-05",
+     "nombre": "Javier Enrique Paternina Buelvas",
+     "ciudad": "Barranquilla",
+     "anos_experiencia": 20,
+     "experiencia": [
+      "Director de Tecnología @ Caribe Informática Integral (2016-01–hoy)",
+      "Líder de Arquitectura @ Servicómputo Costeño (2010-04–2015-12)",
+      "Ingeniero de Software Senior @ Sistemas del Litoral (2006-08–2010-03)",
+      "Analista Programador @ Puerta de Oro Software (2004-02–2006-07)"
+     ],
+     "educacion": [
+      "Pregrado en Ingeniería de Sistemas - Universidad del Norte",
+      "Especialización en Gestión de Proyectos de Software - Universidad del Norte"
+     ],
+     "tecnologias": [
+      "C#",
+      ".NET Core",
+      "SQL Server",
+      "Oracle",
+      "Azure",
+      "Microservicios",
+      "Angular",
+      "Scrum",
+      "Enterprise Architect",
+      "REST API"
+     ],
+     "idiomas": [
+      "Español nativo",
+      "Inglés B1"
+     ],
+     "motivo": "Exceeds the experience requirement with 20 years and has an Especialización en Gestión de Proyectos de Software, but lacks Microsoft Project in his listed technologies."
+    },
+    {
+     "id": "demo-15",
+     "nombre": "Hernán Darío Jaramillo Toro",
+     "ciudad": "Manizales",
+     "anos_experiencia": 20,
+     "experiencia": [
+      "Gerente de BI y Gobierno de Datos @ Fiduciaria del Café (2016-05–hoy)",
+      "Jefe de Inteligencia Empresarial @ Seguros Caldense (2010-03–2016-04)",
+      "Administrador de Base de Datos @ Molinos Nevado (2006-08–2010-02)",
+      "Analista de Sistemas @ Textilera Caldas (2004-01–2006-07)"
+     ],
+     "educacion": [
+      "Ingeniería de Sistemas y Computación (pregrado) - Universidad de Caldas",
+      "Especialización en Gerencia de Proyectos (especialización) - Universidad de Manizales"
+     ],
+     "tecnologias": [
+      "Oracle",
+      "PL/SQL",
+      "MicroStrategy",
+      "SQL Server",
+      "Power BI",
+      "Goverlan",
+      "Data Governance",
+      "SAP BI"
+     ],
+     "idiomas": [
+      "Español nativo",
+      "Inglés A2"
+     ],
+     "motivo": "Meets the experience requirement (20 years) and holds an Especialización en Gerencia de Proyectos, but does not include Microsoft Project among his technologies."
+    },
+    {
+     "id": "demo-32",
+     "nombre": "Daniela Sofía Morales Vargas",
+     "ciudad": "Bogotá",
+     "anos_experiencia": 5,
+     "experiencia": [
+      "Analista de Negocio Senior @ Seguros Bolívaria (2021-06–hoy)",
+      "Analista de Procesos @ Banco Metropolitano Central (2019-01–2021-05)",
+      "Practicante de Operaciones @ Finanzas Nueva Granada (2018-06–2018-12)"
+     ],
+     "educacion": [
+      "Ingeniería Industrial (pregrado) - Pontificia Universidad Javeriana",
+      "Especialización en Gestión de Proyectos - Universidad del Rosario"
+     ],
+     "tecnologias": [
+      "Jira",
+      "Confluence",
+      "Bizagi",
+      "Power BI",
+      "SQL",
+      "Tableau",
+      "Trello",
+      "Miro",
+      "Visio"
+     ],
+     "idiomas": [
+      "Español nativo",
+      "Inglés B2"
+     ],
+     "motivo": "Has an Especialización en Gestión de Proyectos, but falls short on the required experience (5 years) and does not list Microsoft Project."
+    }
+   ]
+  }
+ ]
+}

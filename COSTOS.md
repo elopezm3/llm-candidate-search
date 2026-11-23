@@ -40,3 +40,7 @@ that hit the 20/day quota or Google's 503 errors (see DECISIONS.md, "Retry incid
 | 2026-11-18 | Module 7: agent × 28 with batch leer_cv | m7-v2 | gemini-3.8-flash · low | 110 | 154,769 | 8,413 | $0.1476 | $2.9396 |
 | 2026-11-18 | Module 8: agent × 28 with episodic memory | m8-v1 | gemini-3.8-flash · low | 121 | 191,060 | 11,211 | $0.1853 | $3.1249 |
 | 2026-11-18 | Module 7: agent × 28 with batch leer_cv | m7-v2 | gemini-3.8-flash · low | 118 | 161,984 | 10,727 | $0.1617 | $3.2866 |
+| 2026-11-23 | Web API: 1 searches | web-v1 | gemini-3.8-flash · low | 1 | 1,518 | 292 | $0.0022 | $3.2888 |
+| 2026-11-23 | Public demo: fictitious CVs + pre-computed results | demo-v1 | gemini-3.8-flash · low | 10 | 7,422 | 9,989 | $0.0430 | $3.3318 |
+| 2026-11-23 | Web API: 1 searches | web-v1 | gemini-3.8-flash · low | 1 | 1,160 | 240 | $0.0018 | $3.3336 |
+| 2026-11-23 | Public demo: fictitious CVs + pre-computed results | demo-v1 | gemini-3.8-flash · low | 6 | 6,832 | 1,489 | $0.0107 | $3.3443 |

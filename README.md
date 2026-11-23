@@ -2,7 +2,9 @@
 
 An end-to-end AI system that extracts structured data from CVs and job postings and finds the best candidates for a role. It was built step by step, and every step was measured against a hand-reviewed golden dataset: extraction → semantic and hybrid search → RAG → workflow vs agent (LangGraph) → observability (Langfuse) → guardrails and memory.
 
-Built as the course project of *AI Engineering: Fundamentos de Construcción de Aplicaciones de IA* (Majup Learn). The course provided the dataset: 97 anonymised CVs in Spanish/English and 30 job postings from Colombia (28 of them form the golden evaluation set). Every decision, number and dead end is logged in [`DECISIONS.md`](DECISIONS.md), and every API call's cost in [`COSTOS.md`](COSTOS.md). **Total API spend for the whole project: USD 3.29.**
+Built as the course project of *AI Engineering: Fundamentos de Construcción de Aplicaciones de IA* (Majup Learn). The course provided the dataset: 97 anonymised CVs in Spanish/English and 30 job postings from Colombia (28 of them form the golden evaluation set). Every decision, number and dead end is logged in [`DECISIONS.md`](DECISIONS.md), and every API call's cost in [`COSTOS.md`](COSTOS.md). **Total API spend for the whole project: USD 3.34.**
+
+**Why Spanish?** The data is real Colombian hiring material, so the whole pipeline works in Spanish: Spanish BM25, guardrail reference examples written in Spanish, and bugs that only show up in Spanish (for example *practicante* means "intern" but also "practising", as in *católico practicante*, which made the guardrail block an internship search; see [`DECISIONS.md`](DECISIONS.md)). The public web demo shows the explanations in English.
 
 ## Results
 
@@ -19,9 +21,33 @@ Built as the course project of *AI Engineering: Fundamentos de Construcción de 
 | Episodic memory | recruiter rejections with reasons as few-shot examples, 2 runs per arm | Repeat wrong recommendations of rejected profiles −43%, without dropping them where they *are* correct. The recall gain from run 1 **did not hold** on repeat (noise). |
 | Right to deletion (Ley 1581) | one command, verified | Removes a candidate from Qdrant, caches, checkpoints, golden sets, memory and Langfuse traces, then proves nothing is left (tested on a copy of the data) |
 
+## Web demo
+
+`web/` is a Next.js + TypeScript app with two modes:
+
+- **Public demo (static, no AI at runtime):** results for 6 real job postings over 40 *fictitious* CVs, computed once by
+  `demo_publica.py` (USD 0.05) into `web/public/demo.json`. The page calls no model and no API, so a public link can't run up
+  costs; the page says so in a notice. The course CVs never leave the author's machine.
+- **Live (local only):** `api/` is a FastAPI wrapper over the Module 5 workflow: input guardrail on free text, one Gemini
+  call per search (≈ USD 0.002, ~6 s), a per-run search cap, and the run's cost appended to `COSTOS.md` on shutdown.
+
+Using the UI found two guardrail false positives the metrics had hidden ("3 años de experiencia" read as an age;
+*practicante* matched *católico practicante*). Fixed and re-measured: legitimate searches blocked 2/24 → 0/24 on the 52
+labelled messages, held-out half unchanged. Details in `DECISIONS.md`.
+
+```bash
+cd web && npm install
+npm run dev                  # public demo → http://localhost:3001
+npm run api                  # live: FastAPI on :8000 (needs the data folder and .env)
+npm run dev:live             # live UI → http://localhost:3001
+```
+
 ## Layout
 
 ```
+api/               FastAPI over the workflow (local live search)
+web/               Next.js + TypeScript UI (static public demo / live local mode)
+demo_publica.py    builds the public demo data: fictitious CVs + pre-computed results
 data_extraction/   Module 1: parsing (PDF/DOCX/MD), text vs vision routing, Gemini extraction with verified quotes, cost ledger
 busqueda/          Modules 2-8: embeddings, Qdrant indexing, chunking, filters, RAG, hybrid search, tools,
                    workflow + agent (plain and LangGraph), tracing, guardrails, episodic memory, deletion
@@ -58,6 +84,6 @@ python3 -m pytest -q tests/                      # needs the data folder (deleti
 
 ## Stack
 
-Python 3.12 · Gemini (OpenAI-compatible API) · Instructor · Pydantic · PyMuPDF · Voyage AI · Qdrant · FastEmbed (BM25) · LangGraph · Langfuse (self-hosted, Docker) · pytest
+Python 3.12 · FastAPI · Next.js + TypeScript · Gemini (OpenAI-compatible API) · Instructor · Pydantic · PyMuPDF · Voyage AI · Qdrant · FastEmbed (BM25) · LangGraph · Langfuse (self-hosted, Docker) · pytest
 
 Author: Esteban Lopez
