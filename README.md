@@ -1,5 +1,7 @@
 # LLM candidate search
 
+**Live demo:** https://llm-candidate-search.vercel.app (static, pre-computed over fictitious CVs; no AI runs on the page)
+
 An end-to-end AI system that extracts structured data from CVs and job postings and finds the best candidates for a role. It was built step by step, and every step was measured against a hand-reviewed golden dataset: extraction → semantic and hybrid search → RAG → workflow vs agent (LangGraph) → observability (Langfuse) → guardrails and memory.
 
 Built as the course project of *AI Engineering: Fundamentos de Construcción de Aplicaciones de IA* (Majup Learn). The course provided the dataset: 97 anonymised CVs in Spanish/English and 30 job postings from Colombia (28 of them form the golden evaluation set). Every decision, number and dead end is logged in [`DECISIONS.md`](DECISIONS.md), and every API call's cost in [`COSTOS.md`](COSTOS.md). **Total API spend for the whole project: USD 3.34.**
@@ -23,7 +25,7 @@ Built as the course project of *AI Engineering: Fundamentos de Construcción de 
 
 ## Web demo
 
-`web/` is a Next.js + TypeScript app with two modes:
+`web/` is a Next.js + TypeScript app ([live demo](https://llm-candidate-search.vercel.app), deployed on Vercel from `web/`) with two modes:
 
 - **Public demo (static, no AI at runtime):** results for 6 real job postings over 40 *fictitious* CVs, computed once by
   `demo_publica.py` (USD 0.05) into `web/public/demo.json`. The page calls no model and no API, so a public link can't run up
